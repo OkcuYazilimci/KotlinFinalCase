@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3EA"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <ViewFlipper
+        android:id="@+id/image_carousel"
+        android:layout_width="380dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="8dp"
+        android:autoStart="true"
+        android:background="@drawable/image_rounded"
+        android:clipChildren="true"
+        android:flipInterval="10000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBlueRec">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo2" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo1" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="397dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/indir"
+            />
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/topBlueRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_blue" />
+
+    <ImageView
+        android:id="@+id/hamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburger" />
+
+    <GridLayout
+        android:layout_width="450dp"
+        android:layout_height="496dp"
+        android:columnCount="3"
+        android:padding="25dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/graphic"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="408dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/calculator"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/location"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/notes"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/camera"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/weather"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="408dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/compass"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/alarm"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/files"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/weather_widget" />
+</androidx.constraintlayout.widget.ConstraintLayout>
